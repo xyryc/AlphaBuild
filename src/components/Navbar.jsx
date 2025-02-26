@@ -8,9 +8,9 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full backdrop-blur-lg border-b border-white/10 shadow-md z-50">
-      <div className="container mx-auto flex justify-between items-center px-4 py-2.5">
+      <div className="container mx-auto flex justify-between items-center px-4 sm:px-0 py-2.5">
         {/* Brand */}
-        <a href="#" className=" text-white">
+        <a href="#" className="text-white">
           Magic UI
         </a>
 
@@ -32,7 +32,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <div
         className={cn(
-          "fixed inset-0 bg-black/40 backdrop-blur-md flex flex-col items-center justify-center space-y-6 transition-all duration-300",
+          "fixed top-0 bg-black/40 backdrop-blur-md flex flex-col items-center justify-center space-y-6 transition-all duration-300",
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
         )}
         onClick={() => setIsOpen(false)}
@@ -49,10 +49,12 @@ export default function Navbar() {
         <a href="#" className="text-white text-lg">
           Contact
         </a>
-        <Button variant="outline" className="w-40">
-          Login
+        <Button variant="ghost" className="w-40">
+          Log in
         </Button>
-        <Button className="w-40">Sign Up</Button>
+        <Button variant="secondary" className="w-40">
+          Sign up
+        </Button>
       </div>
     </nav>
   );
