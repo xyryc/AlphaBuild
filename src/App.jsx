@@ -8,6 +8,8 @@ function App() {
 
       <main className="pt-[60px]">
         <Banner />
+
+        
       </main>
     </div>
   );
