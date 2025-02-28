@@ -9,7 +9,7 @@ const Banner = () => {
   return (
     <>
       <div className="relative flex h-[550px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
-        <span className="pointer-events-none z-10 whitespace-pre-wrap">
+        <span className=" z-10 whitespace-pre-wrap">
           {/* animated shiny text */}
           <div className="z-10 flex items-center justify-center">
             <div
@@ -43,21 +43,19 @@ const Banner = () => {
 
         <Particles
           className="absolute inset-0 z-0"
-          quantity={20}
+          quantity={25}
           ease={80}
           color={"#ffffff"}
           refresh
         />
       </div>
 
-      <div className="mt-16 relative container mx-auto rounded-xl overflow-hidden">
-        <div>
-          <img
-            src="hero-dark.png"
-            alt="image"
-            className="w-full h-full object-cover border-2 overflow-hidden rounded-xl"
-          />
-        </div>
+      <div className="overflow-hidden mt-16 relative container mx-auto rounded-xl">
+        <img
+          src="hero-dark.png"
+          alt="image"
+          className="w-full h-full object-cover border-2 rounded-xl"
+        />
 
         <BorderBeam duration={12} size={200} />
       </div>
