@@ -58,7 +58,7 @@ const Pricing = () => {
   return (
     <div className="text-center relative flex flex-col items-center justify-center min-h-screen bg-black text-white mt-96 pb-16">
       {/* sponsors */}
-      <div className="absolute z-20 -top-44">
+      <div className="absolute z-20 -top-64 sm:-top-44 px-10">
         <p className="mb-6 text-sm font-semibold text-gray-600">
           TRUSTED BY TEAMS FROM AROUND THE WORLD
         </p>
@@ -72,7 +72,7 @@ const Pricing = () => {
       </div>
 
       {/* Glowing Background */}
-      <div className="absolute inset-0 flex justify-center items-center">
+      <div className="absolute lg:inset-0 top-0 flex justify-center items-center">
         <div className="w-[60vw] h-[80vw] max-w-[800px] max-h-[900px] rounded-full bg-gradient-to-b from-orange-300 via-orange-300 to-black opacity-40 blur-[100px]" />
       </div>
 
@@ -81,9 +81,9 @@ const Pricing = () => {
       {/* pricing text content */}
       <div className="mt-52 bg-black z-10 absolute inset-0">
         <span className="text-xl font-bold">Pricing</span>
-        <h1 className="text-6xl font-bold">Simple pricing for everyone.</h1>
+        <h1 className="text-5xl sm:text-6xl font-bold">Simple pricing for everyone.</h1>
         <p className="text-xl mt-6 max-w-screen-lg mx-auto px-4">
-          Choose an affordable plan that{"'"}s packed with the best features for
+          Choose an <strong>affordable plan</strong> that{"'"}s packed with the best features for
           engaging your audience, creating customer loyalty, and driving sales.
         </p>
 
@@ -99,7 +99,7 @@ const Pricing = () => {
       </div>
 
       {/* Pricing Cards */}
-      <div className="z-50 -mt-72 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 container mx-auto px-4">
+      <div className="z-10 mt-96 sm:mt-40 md:mt-0 lg:-mt-20 xl:-mt-72 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 container mx-auto px-4">
         {Object.entries(pricing).map(([plan, price]) => (
           <Card
             key={plan}

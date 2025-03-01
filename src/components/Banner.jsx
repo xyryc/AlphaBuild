@@ -25,12 +25,12 @@ const Banner = () => {
           </div>
 
           {/* text */}
-          <div className="text-center max-w-screen-lg mx-auto mt-6 tracking-tight">
-            <h1 className="text-8xl font-[500]">
+          <div className="text-center max-w-96 lg:max-w-screen-lg mx-auto mt-6 tracking-tight">
+            <h1 className="text-5xl lg:text-8xl font-[500]">
               Magic UI is the new way to build landing pages.
             </h1>
 
-            <p className="max-w-screen-sm mx-auto text-[1.25rem] mt-6 opacity-75">
+            <p className="max-w-screen-sm mx-auto text-[1.25rem] mt-6 text-gray-400">
               Beautifully designed, animated components and templates built with
               Tailwind CSS, React, and Framer Motion.
             </p>
@@ -50,14 +50,16 @@ const Banner = () => {
         />
       </div>
 
-      <div className="overflow-hidden mt-16 relative container mx-auto rounded-xl">
-        <img
-          src="hero-dark.png"
-          alt="image"
-          className="w-full h-full object-cover border-2 rounded-xl"
-        />
+      <div className="px-6 lg:px-16">
+        <div className="overflow-hidden mt-16 relative container mx-auto rounded-xl">
+          <img
+            src="hero-dark.png"
+            alt="image"
+            className="w-full h-full object-cover border-2 rounded-xl"
+          />
 
-        <BorderBeam duration={12} size={200} />
+          <BorderBeam duration={12} size={200} />
+        </div>
       </div>
     </>
   );

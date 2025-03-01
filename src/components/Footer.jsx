@@ -3,9 +3,9 @@ import FooterLogo from "/icon.png";
 
 const Footer = () => {
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-8 bg-black">
       {/* top */}
-      <div className="py-16 flex justify-between">
+      <div className="py-8 flex flex-col sm:flex-row justify-between gap-12">
         {/* left */}
         <div>
           <div className="flex items-center gap-2">
@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
 
         {/* right */}
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-10">
           <div>
             <h3 className="text-sm font-medium mb-6 uppercase">Product</h3>
             <p className="text-sm font-[450] opacity-60 hover:opacity-100 cursor-pointer mb-3">
@@ -58,7 +58,7 @@ const Footer = () => {
       </div>
 
       {/* bottom */}
-      <div className="flex justify-between items-center py-8">
+      <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2 py-8">
         {/* left */}
         <div className="flex gap-6 opacity-50">
           <Instagram className="w-4 h-4" />
