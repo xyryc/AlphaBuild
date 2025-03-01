@@ -25,8 +25,8 @@ const Banner = () => {
           </div>
 
           {/* text */}
-          <div className="text-center max-w-96 lg:max-w-screen-lg mx-auto mt-6 tracking-tight">
-            <h1 className="text-5xl lg:text-8xl font-[500]">
+          <div className="text-center max-w-96 sm:max-w-screen-sm lg:max-w-screen-lg mx-auto mt-6 tracking-tight">
+            <h1 className="text-5xl sm:text-7xl xl:text-8xl font-[500] text-pretty">
               Magic UI is the new way to build landing pages.
             </h1>
 

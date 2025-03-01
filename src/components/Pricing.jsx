@@ -99,7 +99,7 @@ const Pricing = () => {
       </div>
 
       {/* Pricing Cards */}
-      <div className="z-10 mt-96 sm:mt-40 md:mt-0 lg:-mt-20 xl:-mt-72 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 container mx-auto px-4">
+      <div className="z-10 mt-96 sm:mt-40 md:mt-28 lg:-mt-20 xl:-mt-72 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 container mx-auto px-4">
         {Object.entries(pricing).map(([plan, price]) => (
           <Card
             key={plan}

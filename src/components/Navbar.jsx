@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full backdrop-blur-lg border-b border-white/10 shadow-md z-50">
-      <div className="container mx-auto flex justify-between items-center px-4 sm:px-0 py-2.5">
+      <div className="container mx-auto flex justify-between items-center px-4 xl:px-0 py-2.5">
         {/* Brand */}
         <a href="#" className="text-white">
           Magic UI
