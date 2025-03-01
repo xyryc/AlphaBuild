@@ -6,6 +6,11 @@ import Eclipse from "/eclipse_bg.png";
 import { useState } from "react";
 import { Button } from "./ui/button";
 import { Check } from "lucide-react";
+import GoogleLogo from "/Google.svg";
+import MicrosoftLogo from "/Microsoft.svg";
+import GithubLogo from "/GitHub.svg";
+import UberLogo from "/Uber.svg";
+import NotionLogo from "/Notion.svg";
 
 const Pricing = () => {
   const [isAnnual, setIsAnnual] = useState(true);
@@ -51,7 +56,21 @@ const Pricing = () => {
   };
 
   return (
-    <div className="text-center relative flex flex-col items-center justify-center min-h-screen bg-black text-white mt-96">
+    <div className="text-center relative flex flex-col items-center justify-center min-h-screen bg-black text-white mt-96 pb-16">
+      {/* sponsors */}
+      <div className="absolute z-20 -top-44">
+        <p className="mb-6 text-sm font-semibold text-gray-600">
+          TRUSTED BY TEAMS FROM AROUND THE WORLD
+        </p>
+        <div className="flex flex-wrap gap-x-10 md:gap-x-16 gap-y-6 items-center justify-center invert filter brightness-0 *:px-2 *:h-8 *:w-28 *:object-scale-down">
+          <img src={GoogleLogo} alt="Google" />
+          <img src={MicrosoftLogo} alt="Microsoft" />
+          <img src={GithubLogo} alt="Github" />
+          <img src={UberLogo} alt="Uber" />
+          <img src={NotionLogo} alt="Notion" />
+        </div>
+      </div>
+
       {/* Glowing Background */}
       <div className="absolute inset-0 flex justify-center items-center">
         <div className="w-[60vw] h-[80vw] max-w-[800px] max-h-[900px] rounded-full bg-gradient-to-b from-orange-300 via-orange-300 to-black opacity-40 blur-[100px]" />
