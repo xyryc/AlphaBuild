@@ -1,5 +1,6 @@
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
+import LogoMarquee from "./components/LogoMarquee";
 import Navbar from "./components/Navbar";
 import Pricing from "./components/Pricing";
 
@@ -11,7 +12,9 @@ function App() {
       <main className="pt-[60px] pb-[56px]">
         <Banner />
 
-        <Pricing/>
+        <Pricing />
+
+        <LogoMarquee/>
       </main>
 
       <Footer />

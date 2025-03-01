@@ -73,7 +73,7 @@ const Pricing = () => {
 
       {/* Glowing Background */}
       <div className="absolute lg:inset-0 top-0 flex justify-center items-center">
-        <div className="w-[60vw] h-[80vw] max-w-[800px] max-h-[900px] rounded-full bg-gradient-to-b from-orange-300 via-orange-300 to-black opacity-40 blur-[100px]" />
+        <div className="absolute top-0 w-[60vw] h-[80vw] max-w-[800px] max-h-[500px] rounded-full bg-gradient-to-b from-orange-300 via-orange-300 to-black opacity-20 blur-3xl" />
       </div>
 
       <img src={Eclipse} className="w-screen relative" />
@@ -81,10 +81,13 @@ const Pricing = () => {
       {/* pricing text content */}
       <div className="mt-52 bg-black z-10 absolute inset-0">
         <span className="text-xl font-bold">Pricing</span>
-        <h1 className="text-5xl sm:text-6xl font-bold">Simple pricing for everyone.</h1>
+        <h1 className="text-5xl sm:text-6xl font-bold">
+          Simple pricing for everyone.
+        </h1>
         <p className="text-xl mt-6 max-w-screen-lg mx-auto px-4">
-          Choose an <strong>affordable plan</strong> that{"'"}s packed with the best features for
-          engaging your audience, creating customer loyalty, and driving sales.
+          Choose an <strong>affordable plan</strong> that{"'"}s packed with the
+          best features for engaging your audience, creating customer loyalty,
+          and driving sales.
         </p>
 
         {/* switch */}
