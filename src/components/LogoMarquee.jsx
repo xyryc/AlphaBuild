@@ -1,4 +1,5 @@
 import { Marquee } from "./magicui/marquee";
+import { motion } from "motion/react";
 import {
   Shield,
   File,
@@ -76,103 +77,144 @@ const LogoMarquee = () => {
     },
   ];
 
-
   return (
     <div className="bg-black py-14">
       <div className="relative">
         {/* first row */}
         <Marquee className="[--duration:10s]" reverse="true">
           {primaryRow.map((item) => (
-            <div
+            <motion.div
               key={item.id}
               className="relative size-20 cursor-pointer overflow-hidden rounded-2xl border p-4 bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] transform-gpu dark:bg-transparent dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]"
-              style={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                delay: Math.random() * 1.5,
+                duration: 0.6,
+                ease: "easeInOut",
+              }}
+              viewport={{ once: true, amount: 0.5 }}
             >
               <item.logo className="size-full" />
               <div
                 className={`${item.color} pointer-events-none absolute left-1/2 top-1/2 h-1/2 w-1/2 -translate-x-1/2 -translate-y-1/2 overflow-visible rounded-full bg-gradient-to-r opacity-70 blur-[20px] filter`}
               ></div>
-            </div>
+            </motion.div>
           ))}
         </Marquee>
 
         {/* second row */}
         <Marquee className="[--duration:25s]" reverse="true">
           {secondaryRow.map((item) => (
-            <div
+            <motion.div
               key={item.id}
               className="relative size-20 cursor-pointer overflow-hidden rounded-2xl border p-4 bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] transform-gpu dark:bg-transparent dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]"
-              style={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                delay: Math.random() * 1.5,
+                duration: 0.6,
+                ease: "easeInOut",
+              }}
+              viewport={{ once: true, amount: 0.5 }}
             >
               <item.logo className="size-full" />
               <div
                 className={`${item.color} pointer-events-none absolute left-1/2 top-1/2 h-1/2 w-1/2 -translate-x-1/2 -translate-y-1/2 overflow-visible rounded-full bg-gradient-to-r opacity-70 blur-[20px] filter`}
               ></div>
-            </div>
+            </motion.div>
           ))}
         </Marquee>
 
         {/* third row */}
         <Marquee className="[--duration:20s]" reverse="true">
           {primaryRow.map((item) => (
-            <div
+            <motion.div
               key={item.id}
               className="relative size-20 cursor-pointer overflow-hidden rounded-2xl border p-4 bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] transform-gpu dark:bg-transparent dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]"
-              style={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                delay: Math.random() * 1.5,
+                duration: 0.6,
+                ease: "easeInOut",
+              }}
+              viewport={{ once: true, amount: 0.5 }}
             >
               <item.logo className="size-full" />
               <div
                 className={`${item.color} pointer-events-none absolute left-1/2 top-1/2 h-1/2 w-1/2 -translate-x-1/2 -translate-y-1/2 overflow-visible rounded-full bg-gradient-to-r opacity-70 blur-[20px] filter`}
               ></div>
-            </div>
+            </motion.div>
           ))}
         </Marquee>
 
         {/* fourth row */}
         <Marquee className="[--duration:30s]" reverse="true">
           {secondaryRow.map((item) => (
-            <div
+            <motion.div
               key={item.id}
               className="relative size-20 cursor-pointer overflow-hidden rounded-2xl border p-4 bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] transform-gpu dark:bg-transparent dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]"
-              style={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                delay: Math.random() * 1.5,
+                duration: 0.6,
+                ease: "easeInOut",
+              }}
+              viewport={{ once: true, amount: 0.5 }}
             >
               <item.logo className="size-full" />
               <div
                 className={`${item.color} pointer-events-none absolute left-1/2 top-1/2 h-1/2 w-1/2 -translate-x-1/2 -translate-y-1/2 overflow-visible rounded-full bg-gradient-to-r opacity-70 blur-[20px] filter`}
               ></div>
-            </div>
+            </motion.div>
           ))}
         </Marquee>
 
         {/* fifth row */}
         <Marquee className="[--duration:20s]" reverse="true">
           {primaryRow.map((item) => (
-            <div
+            <motion.div
               key={item.id}
               className="relative size-20 cursor-pointer overflow-hidden rounded-2xl border p-4 bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] transform-gpu dark:bg-transparent dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]"
-              style={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                delay: Math.random() * 1.5,
+                duration: 0.6,
+                ease: "easeInOut",
+              }}
+              viewport={{ once: true, amount: 0.5 }}
             >
               <item.logo className="size-full" />
               <div
                 className={`${item.color} pointer-events-none absolute left-1/2 top-1/2 h-1/2 w-1/2 -translate-x-1/2 -translate-y-1/2 overflow-visible rounded-full bg-gradient-to-r opacity-70 blur-[20px] filter`}
               ></div>
-            </div>
+            </motion.div>
           ))}
         </Marquee>
 
         {/* sixth row */}
         <Marquee className="[--duration:30s]" reverse="true">
           {secondaryRow.map((item) => (
-            <div
+            <motion.div
               key={item.id}
               className="relative size-20 cursor-pointer overflow-hidden rounded-2xl border p-4 bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] transform-gpu dark:bg-transparent dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]"
-              style={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                delay: Math.random() * 1.5,
+                duration: 0.6,
+                ease: "easeInOut",
+              }}
+              viewport={{ once: true, amount: 0.5 }}
             >
               <item.logo className="size-full" />
               <div
                 className={`${item.color} pointer-events-none absolute left-1/2 top-1/2 h-1/2 w-1/2 -translate-x-1/2 -translate-y-1/2 overflow-visible rounded-full bg-gradient-to-r opacity-70 blur-[20px] filter`}
               ></div>
-            </div>
+            </motion.div>
           ))}
         </Marquee>
 
