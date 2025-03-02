@@ -89,7 +89,7 @@ const LogoMarquee = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{
-                delay: Math.random() * 1.5,
+                delay: Math.random() * 2.5,
                 duration: 0.6,
                 ease: "easeInOut",
               }}
@@ -112,7 +112,7 @@ const LogoMarquee = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{
-                delay: Math.random() * 1.5,
+                delay: Math.random() * 2.5,
                 duration: 0.6,
                 ease: "easeInOut",
               }}
@@ -135,7 +135,7 @@ const LogoMarquee = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{
-                delay: Math.random() * 1.5,
+                delay: Math.random() * 2.5,
                 duration: 0.6,
                 ease: "easeInOut",
               }}
@@ -158,7 +158,7 @@ const LogoMarquee = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{
-                delay: Math.random() * 1.5,
+                delay: Math.random() * 2.5,
                 duration: 0.6,
                 ease: "easeInOut",
               }}
@@ -181,7 +181,7 @@ const LogoMarquee = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{
-                delay: Math.random() * 1.5,
+                delay: Math.random() * 2.5,
                 duration: 0.6,
                 ease: "easeInOut",
               }}
@@ -204,7 +204,7 @@ const LogoMarquee = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{
-                delay: Math.random() * 1.5,
+                delay: Math.random() * 2.5,
                 duration: 0.6,
                 ease: "easeInOut",
               }}

@@ -56,7 +56,7 @@ const Pricing = () => {
   };
 
   return (
-    <div className="text-center relative flex flex-col items-center justify-center min-h-screen bg-black text-white mt-60 pb-16">
+    <div className="text-center relative flex flex-col items-center justify-center min-h-screen bg-black text-white mt-96 sm:mt-60 pb-16">
       {/* sponsors */}
       <div className="absolute z-20 -top-64 sm:-top-44 px-10">
         <p className="mb-6 text-sm font-semibold text-gray-600">

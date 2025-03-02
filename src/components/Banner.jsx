@@ -64,7 +64,7 @@ const Banner = () => {
 
         {/* Glowing Background */}
         <div className="absolute inset-x-0 top-0 flex justify-center items-center">
-          <div className="absolute top-0 w-full h-[80vw] max-w-[1000px] max-h-[300px] rounded-full bg-gradient-to-b from-orange-300 via-orange-300 to-black opacity-45 blur-[200px]" />
+          <div className="absolute top-0 w-full h-[80vw] max-w-[1000px] max-h-[20px] lg:max-h-[300px] rounded-full bg-gradient-to-b from-orange-300 via-orange-300 to-black opacity-45 blur-[200px]" />
         </div>
 
         {/* Gradient overlay */}
