@@ -76,6 +76,7 @@ const LogoMarquee = () => {
     },
   ];
 
+
   return (
     <div className="bg-black py-14">
       <div className="relative">
@@ -177,7 +178,7 @@ const LogoMarquee = () => {
 
         {/* text content overlay */}
         <div className="absolute inset-x-0 bottom-[150px] z-10">
-          <div className="mx-auto size-24 rounded-[2rem] border bg-white/10 p-3 shadow-2xl backdrop-blur-md dark:bg-black/10 lg:size-32">
+          <div className="mx-auto size-24 rounded-[2rem] border bg-white/10 p-4 shadow-2xl backdrop-blur-md dark:bg-black/10 lg:size-32">
             <HeartHandshake className="w-full h-full text-black dark:text-white " />
           </div>
           <div className="z-10 mt-4 flex flex-col items-center text-center text-primary">

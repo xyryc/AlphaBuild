@@ -9,7 +9,7 @@ const Banner = () => {
   return (
     <>
       <div className="relative flex h-[550px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
-        <span className=" z-10 whitespace-pre-wrap">
+        <span className="z-10 whitespace-pre-wrap">
           {/* animated shiny text */}
           <div className="z-10 flex items-center justify-center">
             <div
@@ -24,7 +24,7 @@ const Banner = () => {
             </div>
           </div>
 
-          {/* text */}
+          {/* text contents */}
           <div className="text-center max-w-96 sm:max-w-screen-sm lg:max-w-screen-lg mx-auto mt-6 tracking-tight">
             <h1 className="text-5xl sm:text-7xl xl:text-8xl font-[500] text-pretty">
               Magic UI is the new way to build landing pages.
@@ -50,8 +50,9 @@ const Banner = () => {
         />
       </div>
 
-      <div className="px-6 lg:px-16">
-        <div className="overflow-hidden mt-16 relative container mx-auto rounded-xl">
+      {/* bottom screenshot section */}
+      <div className="px-6 lg:px-16 relative">
+        <div className="overflow-hidden mt-16 relative container mx-auto rounded-xl z-10">
           <img
             src="hero-dark.png"
             alt="image"
@@ -60,6 +61,14 @@ const Banner = () => {
 
           <BorderBeam duration={12} size={200} />
         </div>
+
+        {/* Glowing Background */}
+        <div className="absolute inset-x-0 top-0 flex justify-center items-center">
+          <div className="absolute top-0 w-full h-[80vw] max-w-[1000px] max-h-[300px] rounded-full bg-gradient-to-b from-orange-300 via-orange-300 to-black opacity-45 blur-[200px]" />
+        </div>
+
+        {/* Gradient overlay */}
+        <div className="absolute z-20 inset-x-0 bottom-0 h-full bg-gradient-to-b from-transparent to-background to-70% dark:to-background"></div>
       </div>
     </>
   );

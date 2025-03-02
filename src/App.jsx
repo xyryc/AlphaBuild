@@ -9,12 +9,12 @@ function App() {
     <div className="font-inter">
       <Navbar />
 
-      <main className="pt-[60px] pb-[56px]">
+      <main className="pt-[60px] pb-8">
         <Banner />
 
         <Pricing />
 
-        <LogoMarquee/>
+        <LogoMarquee />
       </main>
 
       <Footer />

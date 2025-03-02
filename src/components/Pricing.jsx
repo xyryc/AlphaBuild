@@ -56,7 +56,7 @@ const Pricing = () => {
   };
 
   return (
-    <div className="text-center relative flex flex-col items-center justify-center min-h-screen bg-black text-white mt-96 pb-16">
+    <div className="text-center relative flex flex-col items-center justify-center min-h-screen bg-black text-white mt-60 pb-16">
       {/* sponsors */}
       <div className="absolute z-20 -top-64 sm:-top-44 px-10">
         <p className="mb-6 text-sm font-semibold text-gray-600">
@@ -148,7 +148,26 @@ const Pricing = () => {
             </AnimatePresence>
 
             {/* Subscribe Button */}
-            <Button className="w-full text-lg font-semibold">Subscribe</Button>
+            <Button
+              className="w-full text-lg font-semibold inline-flex items-center
+              justify-center whitespace-nowrap rounded-md focus-visible:outline-none 
+              focus-visible:ring-1 focus-visible:ring-ring 
+              shadow group relative gap-2 overflow-hidden tracking-tighter transform-gpu
+              ring-offset-current transition-all duration-300 ease-out hover:ring-2 
+              hover:ring-primary hover:ring-offset-2"
+            >
+              <span
+                className="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12
+                transform-gpu bg-white opacity-10 transition-all duration-1000 ease-out 
+                group-hover:-translate-x-96 dark:bg-black"
+              ></span>
+              Subscribe
+            </Button>
+            {/* 
+            <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2 group relative w-full gap-2 overflow-hidden text-lg font-semibold tracking-tighter transform-gpu ring-offset-current transition-all duration-300 ease-out hover:ring-2 hover:ring-primary hover:ring-offset-2">
+              <span className="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform-gpu bg-white opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-96 dark:bg-black"></span>
+              <p>Subscribe</p>
+            </button> */}
 
             <div className="relative w-full h-1 my-8">
               <div className="absolute inset-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
